@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact Us — HACRI</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="bar">
+    <a class="brand" href="index.html">
+      <svg class="mark" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="20" cy="20" r="19" fill="none" stroke="#b8872f" stroke-width="1.4"/>
+        <path d="M10 26 L18 12 L24 20 L30 14" fill="none" stroke="#b8872f" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="18" cy="12" r="1.6" fill="#b8872f"/><circle cx="24" cy="20" r="1.6" fill="#b8872f"/>
+        <circle cx="30" cy="14" r="1.6" fill="#b8872f"/><circle cx="10" cy="26" r="1.6" fill="#b8872f"/>
+      </svg>
+      <span class="name">HACRI
+        <small data-en="Horn of Africa Centre for Regional Integration" data-ar="مركز القرن الأفريقي للتكامل الإقليمي">Horn of Africa Centre for Regional Integration</small>
+      </span>
+    </a>
+    <button class="nav-toggle" aria-label="Menu">☰</button>
+    <nav class="primary">
+      <a href="index.html" data-en="Home" data-ar="الرئيسية">Home</a>
+      <a href="about.html" data-en="About Us" data-ar="من نحن">About Us</a>
+      <a href="articles.html" data-en="Articles &amp; Reports" data-ar="مقالات وتقارير">Articles &amp; Reports</a>
+      <a href="media.html" data-en="Media &amp; Interviews" data-ar="الإعلام والمقابلات">Media &amp; Interviews</a>
+      <a href="gallery.html" data-en="Photo Gallery" data-ar="معرض الصور">Photo Gallery</a>
+      <a href="contact.html" class="active" data-en="Contact" data-ar="اتصل بنا">Contact</a>
+      <button class="lang-toggle">عربي</button>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" style="padding:64px 0 72px;">
+  <div class="wrap" style="max-width:720px;">
+    <h1 style="font-size:clamp(28px,3.6vw,38px);" data-en="Contact Us" data-ar="اتصل بنا">Contact Us</h1>
+    <p class="lead" data-en="Send a message using the form, or write to us directly." data-ar="أرسل رسالة عبر النموذج، أو راسلنا مباشرة.">Send a message using the form, or write to us directly.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap contact-wrap">
+    <div>
+      <!-- Netlify Forms: name="contact" + data-netlify="true" lets Netlify capture
+           submissions automatically once this site is deployed on Netlify. -->
+      <form class="contact" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="contact">
+        <p hidden><label>Don't fill this out: <input name="bot-field"></label></p>
+
+        <label for="name" data-en="Name" data-ar="الاسم">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email" data-en="Email" data-ar="البريد الإلكتروني">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="subject" data-en="Subject" data-ar="الموضوع">Subject</label>
+        <input type="text" id="subject" name="subject">
+
+        <label for="message" data-en="Message" data-ar="الرسالة">Message</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit" data-en="Send message" data-ar="إرسال الرسالة">Send message</button>
+      </form>
+    </div>
+    <div class="contact-info">
+      <div class="item">
+        <b data-en="Email" data-ar="البريد الإلكتروني">Email</b>
+        <span><a href="mailto:info@hacri.org">info@hacri.org</a></span>
+      </div>
+      <div class="item">
+        <b data-en="Focus region" data-ar="منطقة التركيز">Focus region</b>
+        <span data-en="Eritrea · Ethiopia · Djibouti · Somalia" data-ar="إريتريا · إثيوبيا · جيبوتي · الصومال">Eritrea · Ethiopia · Djibouti · Somalia</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap cols">
+    <div>
+      <h4 data-en="HACRI" data-ar="مركز القرن الأفريقي">HACRI</h4>
+      <p style="max-width:280px;font-size:13.5px;" data-en="An independent think tank for peace, good governance and regional integration in the Horn of Africa." data-ar="مركز أبحاث مستقل للسلام والحوكمة الرشيدة والتكامل الإقليمي في القرن الأفريقي.">An independent think tank for peace, good governance and regional integration in the Horn of Africa.</p>
+    </div>
+    <div>
+      <h4 data-en="Explore" data-ar="روابط">Explore</h4>
+      <ul>
+        <li><a href="about.html" data-en="About Us" data-ar="من نحن">About Us</a></li>
+        <li><a href="articles.html" data-en="Articles &amp; Reports" data-ar="مقالات وتقارير">Articles &amp; Reports</a></li>
+        <li><a href="media.html" data-en="Media &amp; Interviews" data-ar="الإعلام والمقابلات">Media &amp; Interviews</a></li>
+        <li><a href="gallery.html" data-en="Photo Gallery" data-ar="معرض الصور">Photo Gallery</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 data-en="Contact" data-ar="تواصل">Contact</h4>
+      <ul>
+        <li><a href="mailto:info@hacri.org">info@hacri.org</a></li>
+        <li><a href="contact.html" data-en="Contact form" data-ar="نموذج التواصل">Contact form</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap bottom" data-en="© 2026 Horn of Africa Centre for Regional Integration. All rights reserved." data-ar="© 2026 مركز القرن الأفريقي للتكامل الإقليمي. جميع الحقوق محفوظة.">© 2026 Horn of Africa Centre for Regional Integration. All rights reserved.</div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
